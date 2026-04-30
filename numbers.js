@@ -138,7 +138,19 @@ console.log(`Grâce à votre réduction, votre prix est descendu à : ` + newPri
  */
 
 //Exercice 6
-
+/* 
 let mot = prompt(`Veuillez entrer un mot :`)
 
-console.log(`Voici un caractère aléatoire issu de votre mot :` + mot[Math.floor(Math.random * ((mot.length -1) - 0 + 1) + 0 )])
+console.log(`Voici un caractère aléatoire issu de votre mot : ` + mot[Math.floor(Math.random() * ((mot.length - 1) - 0 + 1) + 0 )])
+ */
+
+//Exercice 7
+/* 
+let phrase = prompt(`Veuillez entrer une phrase :`)
+
+if (phrase.length % 2) {
+    console.log(`Le nombre de caractères dans votre phrase est : impair`)
+} else {
+    console.log(`Le nombre de caractères dans votre phrase est : pair`)
+}
+ */
