@@ -250,3 +250,131 @@ console.log(
  */
 
 // 10. Détermination de Quadrant Cartésien :
+/* 
+const x = parseFloat(prompt("Veuillez entrer la coordonnée X de votre point :"))
+const y = parseFloat(prompt("Veuillez entrer la coordonnée y de votre point :"))
+
+if (x < 0) {
+  if (y < 0) {
+    console.log("Votre point est dans le 3e quadrant.")
+  } else {
+    console.log("Votre point est dans le 2e quadrant.")
+  }
+} else {
+  if (y < 0) {
+    console.log("Votre point est dans le 4e quadrant.")
+  } else {
+    console.log("Votre point est dans le 1er quadrant.")
+  }
+}
+ */
+
+// --------------------------------------------
+// ----- EXTRAS 12c ---------------------------
+// --------------------------------------------
+
+// 1. Le Calculateur d'Assurance Auto (Accumulation)
+/* 
+const base = 500
+let final = base
+
+console.log("Le prix de base est : " + base)
+
+const age = parseInt(prompt("Quel est votre âge ?"))
+const anciennete = parseInt(prompt("Depuis combien d'années avez-vous votre permis ?"))
+const accidents = parseInt(prompt("Combien d'accidents responsables avez-vous eu ? (Entrez 0 si aucun)"))
+
+if (age < 25) {
+  final += 100
+  console.log(`Malus de 100€ car vous avez moins de 25 ans.`)
+}
+
+if (anciennete < 2) {
+  final += 150
+  console.log(`Malus de 150€ car vous avez moins de 2 ans d'ancienneté.`)
+}
+
+if (accidents > 0) {
+  final += accidents * 50
+  console.log(`Malus de ${accidents * 50}€ car vous avez eu ${accidents} responsables.`)
+}
+
+if (age > 25 && anciennete > 5 && accidents < 1) {
+  final /= 2
+  console.log(`Bonus de 50% appliqué.`)
+}
+
+console.log(`Voici le coût annuel de votre assurance : ${final}€.`)
+ */
+
+// 2. Le Système de Combat RPG (Aléatoire & Types)
+/* 
+const type = prompt("Quell type d'attaque voulez-vous effectuer ? (magique/physique)").toLowerCase()
+
+if (type === "physique" || type === "magique") {
+  console.log(`Attaque ${type}.`)
+  const baseDmg = Math.floor(Math.random() * (50 - 10 + 1) + 10)
+  let finalDmg = baseDmg
+  console.log(`Votre attaque va faire ${baseDmg} points de dégats !`)
+
+  if (type === "magique") {
+    finalDmg *= 1.5
+    console.log(`Mais l'ennemi est sensible à la magie !`)
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
+  } else {
+    finalDmg -= 10
+    console.log(`Mais l'ennemi est équipé d'une armure !`)
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
+  }
+  
+  if (Math.floor(Math.random() * (100 - 0 + 1) + 0) < 10) {
+    finalDmg *= 2
+    console.log("Attendez ! Vous avez touché un point faible !")
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
+  }
+
+} else {
+  console.log("Type d'attaque exotique. Vous faites de grands gestes avant de trébucher. La honte.")
+}
+ */
+
+// 3. Calculatrice d'Année Bissextile (Logique Booléenne Complexe)
+/* 
+const annee = parseInt(prompt("Entrez une année et je vous dirai si elle est bissextile :"))
+
+if (annee % 4 === 0 && !(annee % 100 === 0) || annee % 400 === 0) {
+  console.log(`${annee} est une année bissextile.`)
+} else {
+  console.log(`${annee} n'est pas une année bissextile.`)
+}
+ */
+
+// 4. Le Distributeur de Boissons Intelligent (Gestion de Stock et Monnaie)
+/* 
+let stockCola = 2
+let prixCola = 1.50
+
+console.log(`Bonjour. Il reste ${stockCola} Cola(s). Le Cola coûte ${prixCola.toFixed(2)}€`)
+
+const qty = parseInt(prompt("Combien de Cola(s) voulez-vous ? (Entrez un nombre)."))
+
+ if (qty < 1) {
+  console.log("Cette transaction semble inutile. Réessayez.")
+ } else if (qty > stockCola) {
+  console.log("Stock insuffisant.")
+ } else {
+  let total = qty * prixCola
+  console.log(`Cela va coûter ${total.toFixed(2)}€.`)
+  let fonds = parseInt(prompt("Combien d'argent avez-vous mis dans la machine ?"))
+
+  if (fonds < total) {
+    console.log(`Navré, vous avez inséré ${fonds.toFixed(2)}€, mais le total est de ${total.toFixed(2)}€. Nous vous rendons ${fonds.toFixed(2)}`)
+    fonds = 0
+  } else {
+    stockCola -= qty
+    console.log(`Achat validé !`)
+    console.log(`Vous aviez inséré ${fonds.toFixed(2)}€. La machine va vous rendre ${(fonds - total).toFixed(2)}€.`)
+    console.log(`il reste ${stockCola} Cola(s).`)
+  }
+ }
+  */
