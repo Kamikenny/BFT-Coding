@@ -251,24 +251,29 @@ console.log(
 
 // 10. Détermination de Quadrant Cartésien :
 /* 
-const x = parseFloat(prompt("Veuillez entrer la coordonnée X de votre point :"))
-const y = parseFloat(prompt("Veuillez entrer la coordonnée y de votre point :"))
+const x = parseFloat(
+  prompt("Veuillez entrer la coordonnée X de votre point :")
+);
+const y = parseFloat(
+  prompt("Veuillez entrer la coordonnée y de votre point :")
+);
 
-if (x < 0) {
+if (isNaN(x) || isNaN(y)) {
+  alert("Coordonnées invalides.");
+} else if (x < 0) {
   if (y < 0) {
-    console.log("Votre point est dans le 3e quadrant.")
+    console.log("Votre point est dans le 3e quadrant.");
   } else {
-    console.log("Votre point est dans le 2e quadrant.")
+    console.log("Votre point est dans le 2e quadrant.");
   }
 } else {
   if (y < 0) {
-    console.log("Votre point est dans le 4e quadrant.")
+    console.log("Votre point est dans le 4e quadrant.");
   } else {
-    console.log("Votre point est dans le 1er quadrant.")
+    console.log("Votre point est dans le 1er quadrant.");
   }
 }
  */
-
 // --------------------------------------------
 // ----- EXTRAS 12c ---------------------------
 // --------------------------------------------
@@ -309,32 +314,35 @@ console.log(`Voici le coût annuel de votre assurance : ${final}€.`)
 
 // 2. Le Système de Combat RPG (Aléatoire & Types)
 /* 
-const type = prompt("Quell type d'attaque voulez-vous effectuer ? (magique/physique)").toLowerCase()
+const type = prompt(
+  "Quell type d'attaque voulez-vous effectuer ? (magique/physique)"
+).toLowerCase();
 
 if (type === "physique" || type === "magique") {
-  console.log(`Attaque ${type}.`)
-  const baseDmg = Math.floor(Math.random() * (50 - 10 + 1) + 10)
-  let finalDmg = baseDmg
-  console.log(`Votre attaque va faire ${baseDmg} points de dégats !`)
+  console.log(`Attaque ${type}.`);
+  const baseDmg = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+  let finalDmg = baseDmg;
+  console.log(`Votre attaque va faire ${baseDmg} points de dégats !`);
 
   if (type === "magique") {
-    finalDmg *= 1.5
-    console.log(`Mais l'ennemi est sensible à la magie !`)
-    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
+    finalDmg *= 1.5;
+    console.log(`Mais l'ennemi est sensible à la magie !`);
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`);
   } else {
-    finalDmg -= 10
-    console.log(`Mais l'ennemi est équipé d'une armure !`)
-    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
-  }
-  
-  if (Math.floor(Math.random() * (100 - 0 + 1) + 0) < 10) {
-    finalDmg *= 2
-    console.log("Attendez ! Vous avez touché un point faible !")
-    console.log(`Votre attaque fait ${finalDmg} points de dégats !`)
+    finalDmg -= 10;
+    console.log(`Mais l'ennemi est équipé d'une armure !`);
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`);
   }
 
+  if (Math.floor(Math.random() * (100 - 0 + 1)) + 0 < 10) {
+    finalDmg *= 2;
+    console.log("Attendez ! Vous avez touché un point faible !");
+    console.log(`Votre attaque fait ${finalDmg} points de dégats !`);
+  }
 } else {
-  console.log("Type d'attaque exotique. Vous faites de grands gestes avant de trébucher. La honte.")
+  console.log(
+    "Type d'attaque exotique. Vous faites de grands gestes avant de trébucher. La honte."
+  );
 }
  */
 

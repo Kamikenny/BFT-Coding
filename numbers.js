@@ -139,9 +139,12 @@ console.log(`Grâce à votre réduction, votre prix est descendu à : ` + newPri
 
 //Exercice 6
 /* 
-let mot = prompt(`Veuillez entrer un mot :`)
+let mot = prompt(`Veuillez entrer un mot :`);
 
-console.log(`Voici un caractère aléatoire issu de votre mot : ` + mot[Math.floor(Math.random() * ((mot.length - 1) - 0 + 1) + 0 )])
+console.log(
+  `Voici un caractère aléatoire issu de votre mot : ` +
+    mot[Math.floor(Math.random() * (mot.length - 1 - 0 + 1)) + 0]
+);
  */
 
 //Exercice 7
