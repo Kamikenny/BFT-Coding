@@ -144,8 +144,8 @@ mois.splice(2, 2, "Spring Break");
 console.log(mois);
  */
 
-// 11.
-
+// 11. Vérification d'un Itinéraire de Voyage
+/* 
 const correct = ["Paris", "Lyon", "Marseille"];
 const test = ["Paris", "Lyon", "Marseille"];
 
@@ -172,3 +172,57 @@ if (test.toString() !== correct.toString()) {
 } else {
   console.log("Intinéraire valide. Prêt à expédier.");
 }
+ */
+
+// 13 : Gestion d'un Podium de Course
+/* 
+const tempsDesJoueurs = {
+  Alex: 12.5,
+  Sophie: 11.8,
+  Paul: 12.1,
+};
+
+let gagnant = "";
+let plusRapide = Number.POSITIVE_INFINITY;
+
+if (tempsDesJoueurs["Alex"] < plusRapide) {
+  plusRapide = tempsDesJoueurs["Alex"];
+  gagnant = "Alex";
+}
+
+if (tempsDesJoueurs["Sophie"] < plusRapide) {
+  plusRapide = tempsDesJoueurs["Sophie"];
+  gagnant = "Sophie";
+}
+
+if (tempsDesJoueurs["Paul"] < plusRapide) {
+  plusRapide = tempsDesJoueurs["Paul"];
+  gagnant = "Paul";
+}
+
+console.log(
+  `Le meilleur temps est celui de ${gagnant} avec un chrono de ${plusRapide} secondes !`,
+);
+ */
+
+// 14 : Contrôle d'Accès à une Zone Sécurisée
+/* 
+const personnesDetectees = ["Employé"];
+const badgeScanne = "Badge Secret";
+
+if (
+  personnesDetectees.length === 1 &&
+  personnesDetectees[0] === "Employé" &&
+  badgeScanne === "Badge Secret"
+) {
+  console.log("Vous pouvez entrer.");
+}
+
+if (personnesDetectees.length !== 1) {
+  console.log("Accès refusé : Plusieurs personnes détectées.");
+} else if (personnesDetectees[0] !== "Employé") {
+  console.log("Accès refusé : Personne non autorisée.");
+} else if (badgeScanne !== "Badge Secret") {
+  console.log("Accès refusé : Badge invalide.");
+}
+ */
