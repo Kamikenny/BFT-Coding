@@ -18,8 +18,9 @@ const initialArray = [
   ["three", "BeCode"],
   4,
   "I am a big bad wolf",
-  ["one"],
+  ["one"], 
 ];
+
 
 const exo = [initialArray[7][0], initialArray[2][1], initialArray[4][0]];
 console.log(exo);
@@ -122,7 +123,7 @@ console.log(newNombres);
  */
 
 // 10.
-/*
+/* 
 const mois = [
   "janvier",
   "février",
@@ -148,10 +149,10 @@ console.log(mois);
 const correct = ["Paris", "Lyon", "Marseille"];
 const test = ["Paris", "Lyon", "Marseille"];
 
-if (test !== correct) {
+if (test.toString() !== correct.toString()) {
   if (test[0] !== correct[0]) {
     console.log(
-      `Erreur : Le point de départ (${test[0]}) n'est pas : ${correct[0]}.`
+      `Erreur : Le point de départ (${test[0]}) n'est pas : ${correct[0]}.`,
     );
   }
 
@@ -159,19 +160,15 @@ if (test !== correct) {
     console.log(
       `Erreur : La destination (${test[test.length - 1]}) n'est pas : ${
         correct[correct.length - 1]
-      }.`
+      }.`,
     );
   }
 
   if (test.length !== correct.length) {
     console.log(
-      `Erreur : L'itinéraire ne comporte pas le bon nombre d'étapes (${correct.length}).`
+      `Erreur : L'itinéraire ne comporte pas le bon nombre d'étapes (${correct.length}).`,
     );
   }
-} else if (
-  test === correct &&
-  test[test.length - 1] === correct[correct.length - 1] &&
-  test.length === correct.length
-) {
-  console.log("Intinéraire valide.Prêt à expédier.");
+} else {
+  console.log("Intinéraire valide. Prêt à expédier.");
 }
