@@ -175,7 +175,7 @@ if (test.toString() !== correct.toString()) {
  */
 
 // 13 : Gestion d'un Podium de Course
-/* 
+
 const tempsDesJoueurs = {
   Alex: 12.5,
   Sophie: 11.8,
@@ -185,25 +185,24 @@ const tempsDesJoueurs = {
 let gagnant = "";
 let plusRapide = Number.POSITIVE_INFINITY;
 
-if (tempsDesJoueurs["Alex"] < plusRapide) {
-  plusRapide = tempsDesJoueurs["Alex"];
+if (tempsDesJoueurs.Alex < plusRapide) {
+  plusRapide = tempsDesJoueurs.Alex;
   gagnant = "Alex";
 }
 
-if (tempsDesJoueurs["Sophie"] < plusRapide) {
-  plusRapide = tempsDesJoueurs["Sophie"];
+if (tempsDesJoueurs.Sophie < plusRapide) {
+  plusRapide = tempsDesJoueurs.Sophie;
   gagnant = "Sophie";
 }
 
-if (tempsDesJoueurs["Paul"] < plusRapide) {
-  plusRapide = tempsDesJoueurs["Paul"];
+if (tempsDesJoueurs.Paul < plusRapide) {
+  plusRapide = tempsDesJoueurs.Paul;
   gagnant = "Paul";
 }
 
 console.log(
-  `Le meilleur temps est celui de ${gagnant} avec un chrono de ${plusRapide} secondes !`,
+  `Le meilleur temps est celui de ${gagnant} avec un chrono de ${plusRapide} secondes !`
 );
- */
 
 // 14 : Contrôle d'Accès à une Zone Sécurisée
 /* 
