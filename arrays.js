@@ -175,7 +175,7 @@ if (test.toString() !== correct.toString()) {
  */
 
 // 13 : Gestion d'un Podium de Course
-
+/* 
 const tempsDesJoueurs = {
   Alex: 12.5,
   Sophie: 11.8,
@@ -203,7 +203,7 @@ if (tempsDesJoueurs.Paul < plusRapide) {
 console.log(
   `Le meilleur temps est celui de ${gagnant} avec un chrono de ${plusRapide} secondes !`
 );
-
+ */
 // 14 : Contrôle d'Accès à une Zone Sécurisée
 /* 
 const personnesDetectees = ["Employé"];
