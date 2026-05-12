@@ -1,9 +1,7 @@
 // 2. Afficher les nombres pairs de 2 à 20
 /* 
-for (let i = 0; i <= 20; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} est un nombre pair.`);
-  }
+for (let i = 0; i <= 20; i += 2) {
+  console.log(`${i} est un nombre pair.`);
 }
  */
 
