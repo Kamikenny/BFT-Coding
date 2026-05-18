@@ -108,8 +108,8 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(`Le mot caché est : ${minuscules.join("")}`);
- */
 
+ */
 // 08.
 /* 
 const str = 4589;
