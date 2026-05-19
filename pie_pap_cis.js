@@ -1,4 +1,4 @@
-// Pierre - Papier - Ciseaux
+/* // Pierre - Papier - Ciseaux
 
 const actions = ["pierre", "papier", "ciseaux"];
 const scores = {
@@ -88,3 +88,4 @@ if (scores.joueur === 3) {
 } else {
   console.log(`DESOLE !! C'est qui ai gagné cette partie ! `);
 }
+ */
