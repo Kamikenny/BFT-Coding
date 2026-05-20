@@ -1,4 +1,4 @@
-// Terminal de cryptage
+/* // Terminal de cryptage
 
 let phrase = prompt("Veuillez entrer une phrase d'au moins 10 caractères :");
 
@@ -19,3 +19,4 @@ if (phrase.length < 10 || phrase.indexOf(" ") === -1) {
 
   alert(crypted);
 }
+ */
