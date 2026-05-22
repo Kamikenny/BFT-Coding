@@ -33,13 +33,6 @@ while (scores.joueur < 3 && scores.ordi < 3) {
       .trim();
   }
 
-  const victoire =
-    `Félicitations ! C'est toi qui gagne cette manche !\n` +
-    `Tu as joué "${joueur}" et moi "${ordi}".`;
-  const defaite =
-    `Malheureusement, c'est moi qui gagne cette manche !\n` +
-    `Tu as joué "${joueur}" et moi "${ordi}".`;
-
   if (joueur === ordi) {
     console.log(
       `EGALITE ! Nous avons joué la même action ! (${joueur} / ${ordi})`,
@@ -88,4 +81,5 @@ if (scores.joueur === 3) {
 } else {
   console.log(`DESOLE !! C'est qui ai gagné cette partie ! `);
 }
+
  */

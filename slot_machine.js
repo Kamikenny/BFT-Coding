@@ -1,4 +1,4 @@
-/* // Machine à sous
+// Machine à sous
 
 let game = true;
 let solde = 50.0;
@@ -81,4 +81,4 @@ console.log(`Merci pour votre visite !`);
 console.log(
   `Vous repartez avec ${solde.toFixed(2)} crédits après avoir joué ${count} parties.`,
 );
- */
+

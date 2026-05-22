@@ -1,4 +1,4 @@
-/* // gestion d'inventaire de survie
+// gestion d'inventaire de survie
 
 const inventaire = {};
 
@@ -63,4 +63,4 @@ while (true) {
     }
   }
 }
- */
+
