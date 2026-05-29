@@ -65,11 +65,7 @@ function isShortWeather(temperature) {
     console.log("Action impossible");
     return undefined;
   }
-  if (temperature >= 24) {
-    return true;
-  } else {
-    return false;
-  }
+  return temp >= 24
 }
 
 console.log(isShortWeather(13));
@@ -80,7 +76,7 @@ console.log(isShortWeather(-7));
 // 7. Dernier élément d'un tableau
 /* 
 function getLastElement(array) {
-  if (array.length < 1) {
+  if (!array.length) {
     return null;
   } else {
     return array[array.length - 1];
@@ -95,7 +91,7 @@ console.log(getLastElement([]));
 // 8. Capitaliser une chaîne
 /* 
 function capitalize(str) {
-  return str[0].toUpperCase() + str.slice(1, str.length);
+  return str[0].toUpperCase() + str.slice(1);
 }
 
 console.log(capitalize("eggplant"));
@@ -107,13 +103,10 @@ console.log(capitalize("squid"));
 /* 
 function sumArray(array) {
   let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (isNaN(array[i] % 2)) {
-      console.log(`${array[i]} n'est pas un nombre`);
-    } else {
-      sum += array[i];
-    }
-  }
+
+  array.forEach((el) => {
+    sum += el;
+  });
   return sum;
 }
 
