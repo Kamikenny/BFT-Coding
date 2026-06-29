@@ -40,8 +40,9 @@ class Mot:
         if lettre in self.lettres_mot:
             if lettre in self.lettres_trouvees:
                 print(f"Vous avez déjà trouvé cettre lettre : '{lettre}' !")
-            self.lettres_trouvees.add(lettre)
-            print(f"Bravo ! '{lettre}' fait partie du mot !")
+            else:
+                self.lettres_trouvees.add(lettre)
+                print(f"Bravo ! '{lettre}' fait partie du mot !")
             print("---------------------------------------------------")
             if self.affichage_mot() == self.mot_a_trouver:
                 self.gagne = True
@@ -56,27 +57,27 @@ class Mot:
                 print("---------------------------------------------------")
 
     def draw_pendu(self) -> None:
-        print(f"{" ":<2}__________")
-        print(f"{" ":<2}|{"|":>9}")
+        print(f"{' ':<2}__________")
+        print(f"{' ':<2}|{'|':>9}")
         # Tête
         if len(self.lettres_perdues) >= 1:
-            print(f"{" ":<2}|{"0":>9}")
+            print(f"{' ':<2}|{'0':>9}")
         else:
-            print(f"{" ":<2}|")
+            print(f"{' ':<2}|")
         # Torse
         if len(self.lettres_perdues) == 2:
-            print(f"{" ":<2}|{"/  ":>10}")
+            print(f"{' ':<2}|{'/  ':>10}")
         elif len(self.lettres_perdues) == 3:
-            print(f"{" ":<2}|{"/| ":>10}")
+            print(f"{' ':<2}|{'/| ':>10}")
         elif len(self.lettres_perdues) >= 4:
-            print(f"{" ":<2}|{"/|\\":>10}")
+            print(f"{' ':<2}|{'/|\\':>10}")
         else:
-            print(f"{" ":<2}|")
+            print(f"{' ':<2}|")
         # Jambes
         if len(self.lettres_perdues) == 5:
-            print(f"{" ":<2}|{"/  ":>10}")
+            print(f"{' ':<2}|{'/  ':>10}")
         elif len(self.lettres_perdues) == 6:
-            print(f"{" ":<2}|{"/ \\":>10}")
+            print(f"{' ':<2}|{'/ \\':>10}")
         else:
-            print(f"{" ":<2}|")
+            print(f"{' ':<2}|")
         print(f" /|\\")
