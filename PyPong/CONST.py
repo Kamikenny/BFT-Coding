@@ -1,0 +1,2 @@
+WIDTH: int = 1280
+HEIGHT: int = 720
